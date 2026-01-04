@@ -4,7 +4,7 @@ from Layouts.layout import (create_layout, create_overall_analysis_content,
                             create_raw_data_content)
 from Callbacks.callbacks import register_callbacks
 
-app = Dash(__name__, suppress_callback_exceptions=True)
+app = Dash(__name__, suppress_callback_exceptions=True, assets_folder='Assets')
 server = app.server
 app.title = "Uber Dashboard"
 
